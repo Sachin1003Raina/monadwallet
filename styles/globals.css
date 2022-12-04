@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rsbs-backdrop-bg: rgba(0, 0, 0, 0.6);
+  --rsbs-bg: #fafafa;
+}
+
+@layer base {
+  body {
+    @apply mx-auto max-w-monitor bg-background font-poppins text-primaryText md:bg-bigBackground;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  border {
+    @apply border-1px border-black border-opacity-5;
+  }
+
+  margin {
+    @apply mt-8;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    @apply text-gray-500;
+  }
+
+  .indicators {
+    display: flex !important;
+    position: absolute !important;
+    bottom: 12px !important;
+    left: 50%;
+    gap: 6px;
+    transform: translate(-50%, 0px);
+  }
+
+  .popupClass {
+    @apply fixed  max-w-5xl flex flex-col justify-between  text-secondary z-50 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .sd-container {
+    position: relative;
+  }
+
+  .sd {
+    padding: 0px 5px;
+    height: 30px;
+  }
+
+  .open-button {
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    pointer-events: none;
+  }
+
+  .open-button button {
+    border: none;
+    background: transparent;
+  }
+}
+
+@layer components {
+  @-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

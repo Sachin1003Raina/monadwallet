@@ -1,0 +1,96 @@
+.container {
+  padding: 0 2rem;
+  /* margin: 20px; */
+  background-color: #30c0d8;
+}
+
+.main {
+  /* min-height: 100vh; */
+  /* padding: 4rem 0; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.dp {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.credit {
+  border: 2px;
+  border-color: #222;
+  background-color: rgb(253 230 138);
+  border-radius: 10px;
+}
+.coin {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 05px;
+  color: rgb(225, 81, 37);
+}
+
+.ad {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(167, 22, 0);
+  margin-bottom: 30px;
+}
+.recharge {
+  margin-bottom: 20px;
+  border: 5px;
+  border-color: #222;
+  background-color: rgba(164, 244, 79, 0.916);
+  border-radius: 10px;
+  color: #111;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    border-color: #222;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
